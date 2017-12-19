@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <base href="/pwa/">
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json">
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAP6xesyIu28kHbgKzbQOKFSq0aOjJR2QQ",
+        authDomain: "pwa-notes-e7581.firebaseapp.com",
+        databaseURL: "https://pwa-notes-e7581.firebaseio.com",
+        projectId: "pwa-notes-e7581",
+        storageBucket: "",
+        messagingSenderId: "562104253020"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script src="js/object.observe.polyfill.js"></script>
     <script src="js/array.observe.polyfill.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/push.js"></script>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
