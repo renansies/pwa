@@ -10,7 +10,7 @@ messaging.requestPermission().then(function() {
       console.log(currentToken);
       return currentToken;
     } else {
-      console.console.warn('Nenhum id disponível, solicite permissão para gerar um');
+      console.warn('Nenhum id disponível, solicite permissão para gerar um');
     }
   });
 })
@@ -20,7 +20,7 @@ messaging.getToken().then(function (currentToken) {
     console.log(currentToken);
     return currentToken;
   } else {
-    console.console.warn('Nenhum id disponível, solicite permissão para gerar um');
+    console.warn('Nenhum id disponível, solicite permissão para gerar um');
   }
 })
 .catch(function(err) {
